@@ -1,0 +1,117 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 15px;
+}
+.panel {
+  border: 1px solid #AFAFAF;
+}
+.panel-header {
+  padding: 5px;
+  background: #595959;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+}
+.panel-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px 0px 15px;
+  background: #EFF4F8;
+  border-bottom: 30px solid #F0F0F1;
+}
+.panel-content-sell, .panel-content-buy {
+  position: relative;
+  width: 40%;
+  padding: 5px 5px 0;
+  background: #FFF;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+}
+.panel-content-sell {
+  color: #B92C27;
+  border-right: 0;
+}
+.panel-content-sell:hover, .panel-content-sell:hover .triangle-inner-left {
+  background: #EB3323;
+  color: #FFF;
+  border: 1px solid #64AAC3;
+}
+.panel-content-buy {
+  color: #6F873C;
+  border-left: 0;
+  text-align: right;
+}
+.panel-content-buy:hover, .panel-content-buy:hover .triangle-inner-right {
+  background: #92CE54;
+  color: #FFF;
+  border: 1px solid #64AAC3;
+}
+.label {
+  padding-bottom: 2px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.price-sell, .price-buy {
+  position: relative;
+}
+.price-sell {
+  left: 0;
+}
+.price-buy {
+  right: 13px;
+}
+.first-digits {
+  font-size: 20px;
+}
+.middle-digits {
+  font-size: 28px;
+  font-weight: bold;
+}
+.last-digit {
+  position: absolute;
+  top: -2px;
+  padding: 0 2px;
+  font-size: 20px;
+}
+.triangle-outer-left, .triangle-outer-right {
+  position: absolute;
+  top: -1px;
+  height: 58px;
+  width: 30px;
+  overflow: hidden;
+}
+.triangle-outer-left {
+  right: -28px;
+}
+.triangle-outer-right {
+  left: -28px;
+}
+.triangle-inner-left, .triangle-inner-right {
+  position: relative;
+  top: -21px;
+  transform: rotate(45deg);
+  width: 100px;
+  height: 100px;
+  background: #FFF;
+  border: 1px solid #CCC;
+  border-radius: 15px;
+}
+.triangle-inner-left {
+  right: 91px;
+}
+.triangle-inner-right {
+  left: 21px;
+}
+.increased, .decreased {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.increased {
+  border-bottom: 20px solid #377D22;
+}
+.decreased {
+  border-top: 20px solid #EB3323;
+}

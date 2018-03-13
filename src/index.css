@@ -1,0 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Ruda', sans-serif;
+  background: #E8E8E8;
+  padding: 15px;
+}

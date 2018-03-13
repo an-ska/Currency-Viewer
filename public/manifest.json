@@ -1,0 +1,5 @@
+{
+  "short_name": "Currency App",
+  "name": "Currency Viewer App",
+  "start_url": "./index.html",
+}
