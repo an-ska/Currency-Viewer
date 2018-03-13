@@ -99,7 +99,6 @@ class PanelsContainer extends Component {
           buy={data.buy}
           sell={data.sell}
           key={data.id}
-          // id={data.id}
         />
       )
     });
